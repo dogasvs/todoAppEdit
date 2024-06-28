@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="assets/css/todo.css">
+  <script src="assets/js/todo.js" defer></script>
+</head>
+<body>
+  
+  <div class="container">
+    
+    <header class="moviesHeader">
+      <h1>Yapılacaklar</h1>
+      <button id="addTodoBtn">Ekle</button>
+    </header>
+
+    <div class="todoList" id="YapılacaklarContainer"></div>
+
+  </div>
+
+  <dialog id="modal">
+    <h2 class="modelAddNew">Yeni Ekle</h2>
+    <h2 class="modelEdit">Düzenle</h2>
+    <form method="dialog" autocomplete="off" id="addTodoForm">
+     <label for="todo">Yapılacak İşler: </label> <input type="text" name="todo">
+
+      <p><button class="modelAddNew">Ekle</button> <button class="modelEdit">Kaydet</button> <button type="button" class="vazgec" onclick="addMovieForm.reset();modal.close();">Vazgeç</button></p>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+</body>
+</html>
